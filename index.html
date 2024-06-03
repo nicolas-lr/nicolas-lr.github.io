@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <meta>
+    <link rel="stylesheet" href="style.css">
+    <title> Home Page </title>
+</head>
+
+<body>
+
+    <header>
+      <h1 class="nav-titulo"><a onclick="navigateTo('/index.html')"> FoxxIt </a> </h1>
+          <div>
+              <nav>
+                  <ul class="nav-list">
+                      <li class="nav-item-nova" onclick="navigateTo('/TerCon.html')"> Termos e Condições </li>
+                      <li class="nav-item-nova" onclick="navigateTo('/Sobre.html')"> Sobre o Projeto </li>
+                  </ul>
+          </div>
+                <div>
+                  <ul class="nav-list">
+                    <li class="nav-item-nova"><button class="config-btn2" id="darkmode" onclick="ChangeTheme()"> DarkMode 🌕 </button> </li>
+                    <li class="nav-item-nova"><button class="config-btn2" onclick="navigateTo('Login.html')"> Login </button> </li>
+              </div>
+                  </ul>
+    </header>
+    
+<main>
+        <div class="welcome-text">
+            <h1 id="welcome-message">Bem-vindo ao Nosso Site!</h1>
+        <br>
+            <p>Olá, internauta aventureiro! 🌟 Seja bem-vindo ao nosso cantinho virtual, onde a magia da programação web ganha vida! Se você chegou até aqui, parabéns! Você encontrou o tesouro escondido dos projetos de faculdade.</p>
+    <br>
+            <p>Nosso site é como aquele café quentinho que você precisa nas manhãs frias de terça-feira. Só que em vez de cafeína, temos códigos, muita criatividade e, claro, um pouquinho de humor para animar seu dia! ☕✨</p>
+    <br>
+            <p>Este projeto é fruto de noites em claro, litros de café (ou energético para os mais ousados) e uma pitada de desespero saudável. Sim, estamos falando da nossa jornada épica na disciplina de Códigos de Alta Performance! 🚀</p>
+    <br>
+            <p>Além de tudo isso, nosso site foi pensado para conter uma galeria de imagens de raposas! Essas criaturas encantadoras são o nosso tema principal, trazendo um toque de natureza e beleza para o mundo da programação. 🦊📸</p>
+    <br>
+            <p>Então, pegue seu mouse, ajuste sua cadeira e prepare-se para explorar! Esperamos que você se divirta tanto navegando por aqui quanto nós nos divertimos criando este espaço. E lembre-se: na dúvida, chame um programador! 😉</p>
+    <br>
+            <p>Divirta-se e boa navegação! 💻🌐🎉</p>
+        
+    <div class="slider-container">
+        <button class="prev" onclick="voltarTab()"> < </button>
+        <div class="tabs-container">
+            <div class="tab" onclick="navigateTo('Sobre.html')">Sobre os Membros <br> <br> Saiba mais sobre os responsáveis por esse projeto.</div>
+            <div class="tab" onclick="navigateTo('Galeria.html')">Galeria de Imagens <br> <br> Imagens aleatórias que ainda vamos por aqui.</div>
+        </div>
+        <button class="next" onclick="passarTab()"> > </button>
+    </div>
+
+</main>
+
+    <script src="script.js"></script>
+    
+<footer>
+
+    <p> © 2024 Volta Gojo. Todos os direitos reservados. </p> <p>Bem Vindo, Padrinho </p> <p>®O rei sola </p>
+    
+</footer>
+
+
+</body>
+
+</html>

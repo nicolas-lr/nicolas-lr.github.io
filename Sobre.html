@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre os Membros</title>
+</head>
+
+<body>
+    <header>
+      <h1 class="nav-titulo"><a onclick="navigateTo('/index.html')"> FoxxIt </a> </h1>
+          <div>
+              <nav>
+                  <ul class="nav-list">
+                      <li class="nav-item-nova" onclick="navigateTo('/TerCon.html')"> Termos e Condições </li>
+                      <li class="nav-item-nova" onclick="navigateTo('/Sobre.html')"> Sobre o Projeto </li>
+                  </ul>
+          </div>
+                <div>
+                  <ul class="nav-list">
+                    <li class="nav-item-nova"><button class="config-btn2" id="darkmode" onclick="ChangeTheme()"> DarkMode 🌕 </button> </li>
+                    <li class="nav-item-nova"><button class="config-btn2" onclick="navigateTo('Login.html')"> Login </button> </li>
+              </div>
+                  </ul>
+    </header>
+
+    <main>
+    <h1 class="welcome-text" id="sobre" >Sobre nos e nossas funções </h1>
+<div class="tabs-container-sobre">
+    <div class="tab-sobre" id="01">
+        <img id="01" src="img/Nicolas.jpg">
+        <div class="hover-text">
+            Nicolas
+            <br>
+            Função: Gerente de Projeto e Controle de Qualidade
+            <br>
+           Responsabilidades:
+                Gerenciamento de projeto
+                Controle de qualidade
+                Codificação
+            <br>
+            Background: Nicolas tem uma sólida experiência em gerenciamento de projetos e desenvolvimento web, garantindo que o projeto siga os prazos e mantenha um alto padrão de qualidade.
+            <a href="https://github.com/nicolas-lr" id="github-link"></a>
+        </div>
+    </div>
+    
+    <div class="tab-sobre" id="02">
+        <img src="img/Davi.jpg">
+        <div class="hover-text">
+            Davi
+            <br>
+            Função: Designer Principal e Desenvolvedor
+            <br>
+            Responsabilidades:
+            Criação do layout e visual do site
+            Garantia de um design atraente e fácil de usar
+            Desenvolvimento front-end
+            <br>
+            Background: Com habilidade em design gráfico e desenvolvimento front-end, Davi contribui significativamente para a estética e funcionalidade do site.
+            <a href="https://github.com/DavhiHsf" id="github-link"></a>
+        </div>
+    </div>
+    
+    <div class="tab-sobre" id="03">
+        <img src="img\Gabriel.jpg">
+        <div class="hover-text">
+            Gabriel
+            <br>
+            Função: Analista de Segurança
+            <br>
+            Responsabilidades:
+                Garantia de proteção contra ameaças e vulnerabilidades
+                Realização de testes de penetração
+                Implementação de medidas de segurança
+            <br>
+            Background: Gabriel trabalha para proteger os dados dos usuários e a integridade do site.
+            <a href="https://github.com/GBarrox" id="github-link"></a>
+        </div>
+    </div>
+
+    <div class="tab-sobre" id="04">
+        <img src="img/paulo.jpg">
+        <div class="hover-text">
+            Paulo
+            <br>
+            Função: Desenvolvedor Backend
+            <br>
+            Responsabilidades:
+            Criação e gestão de servidores
+            Gerenciamento de bancos de dados
+            Desenvolvimento da lógica do site
+            <br>
+            Background: Com vasta experiência em desenvolvimento de software, Paulo assegura que o site funcione de forma eficiente e segura.
+           <a href="https://github.com/Paulodbv" id="github-link"></a>
+        </div>
+    </div>
+
+    <div class="tab-sobre" id="05">
+        <img src="img/jackson.jpg">
+        <div class="hover-text">
+            Jackson
+            <br>
+            Função: Especialista em Front-End
+            <br>
+            Responsabilidades:
+                Implementação das interfaces do usuário
+                Garantia de design intuitivo
+            <br>
+            Background: Com conhecimento em HTML, CSS e JavaScript, Jackson transforma o design em uma experiência de usuário funcional e agradável.
+            <a href="https://github.com/Jacksonlucasm8" id="github-link"></a>
+        </div>
+    </div>
+</div>
+
+        <button class="voltar-bnt" onclick="navigateToBack('')">Voltar</button>
+
+        <!-- Div para exibir o conteúdo ao clicar -->
+            <div id="overlay" class="overlay">
+                <div class="overlay-content" id="overlayContent">
+                    <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                    <img id="overlay-img" src="" alt="Imagem do Membro">
+                    <div id="overlay-text"></div>
+                    <div id="social-links" class="social-links">
+                    <a href="#" id="overlay-link"> <img src="img/github.png" alt="GitHub"> Github</a>
+                    </div>
+                    <textarea id="additional-input" placeholder="Digite aqui..."></textarea>
+                     <button class="config-btn2" id="submit-text" onclick="submitText()">Enviar</button>
+    </main>
+
+    <footer>
+        <p> © 2024 Volta Gojo. Todos os direitos reservados. </p>  <p>Bem Vindo, Padrinho </p>  <p>®O rei sola </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

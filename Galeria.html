@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Galeria de Imagens </title>
+
+</head>
+
+<body>
+    <header>
+      <h1 class="nav-titulo"><a onclick="navigateTo('/index.html')"> FoxxIt </a> </h1>
+          <div>
+              <nav>
+                  <ul class="nav-list">
+                      <li class="nav-item-nova" onclick="navigateTo('/TerCon.html')"> Termos e Condições </li>
+                      <li class="nav-item-nova" onclick="navigateTo('/Sobre.html')"> Sobre o Projeto </li>
+                  </ul>
+          </div>
+                <div>
+                  <ul class="nav-list">
+                    <li class="nav-item-nova"><button class="config-btn2" id="darkmode" onclick="ChangeTheme()"> DarkMode 🌕 </button> </li>
+                    <li class="nav-item-nova"><button class="config-btn2" onclick="navigateTo('Login.html')"> Login </button> </li>
+              </div>
+                  </ul>
+    </header>
+
+    <main>
+
+        <div class="gallery" id="gallery"></div>
+
+        <button class="load-more" id="loadMore"> Carregar Mais Imagens </button>
+
+    </main>
+
+    <footer>
+        <p> © 2024 Volta Gojo. Todos os direitos reservados. </p>  <p>Bem Vindo, Padrinho </p>  <p>®O rei sola </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

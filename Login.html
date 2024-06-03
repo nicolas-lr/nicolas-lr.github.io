@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Página de Login </title>
+
+</head>
+
+<body>
+
+    <header>
+      <h1 class="nav-titulo"><a onclick="navigateTo('/index.html')"> FoxxIt </a> </h1>
+          <div>
+              <nav>
+                  <ul class="nav-list">
+                      <li class="nav-item-nova" onclick="navigateTo('/TerCon.html')"> Termos e Condições </li>
+                      <li class="nav-item-nova" onclick="navigateTo('/Sobre.html')"> Sobre o Projeto </li>
+                  </ul>
+          </div>
+                <div>
+                  <ul class="nav-list">
+                    <li class="nav-item-nova"><button class="config-btn2" id="darkmode" onclick="ChangeTheme()"> DarkMode 🌕 </button> </li>
+                    <li class="nav-item-nova"><button class="config-btn2" onclick="navigateTo('Login.html')"> Login </button> </li>
+              </div>
+                  </ul>
+    </header>
+
+  <main>
+      <div id="login">
+          <div class="caixa">
+              <img src="img/F7bxE5ebUAEzZp5-removebg-preview.png" alt="">
+              <h1 id="login-h1">Login</h1>
+              <div class="email">
+                  <input type="email" id="login-email" placeholder="E-mail">
+              </div>
+              <div class="senha">
+                  <input type="password" id="login-password" placeholder="Senha">
+              </div>
+              <div class="entrar">
+                  <input type="submit" value="Entrar" onclick="login()">
+                  <p id="login-p">Ainda não tem uma conta? <a href="Cadastro.html" id="login-link"><br>Crie uma aqui.</a></p>
+              </div>
+          </div>
+      </div>
+  </main>
+  
+  <script src="script.js"></script>
+  
+  <footer>
+
+    <p> © 2024 Volta Gojo. Todos os direitos reservados. </p>  <p>Bem Vindo, Padrinho </p>  <p>®O rei sola </p>
+    
+</footer>
+    
+</body>
+
+</html>
