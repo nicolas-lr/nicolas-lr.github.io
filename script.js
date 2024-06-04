@@ -56,7 +56,7 @@ updateWelcomeMessage();
 
     //Funções de Registro e Login
  /*---------------------------------------------*/
-document.addEventListener('DOMContentLoaded', function () {
+    if (window.location.pathname === '/Cadastro.html'){
     // Função para registrar um novo usuário
     function register() {
         const name = document.getElementById('register-name').value;
@@ -84,8 +84,10 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Usuário registrado com sucesso!');
         window.location.href = 'Login.html';
     }
+}
 
     // Função para fazer login do usuário
+    if (window.location.pathname === '/Login.html')
     function login() {
         const email = document.getElementById('login-email').value;
         const password = document.getElementById('login-password').value;
@@ -103,11 +105,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.register = register;
     window.login = login;
 
-});
-
     //Movimento e transição dos Tabs
 /*-----------------------------------------*/ 
-if (window.location.pathname === '/index.html'){
     let indexAtual = 0;
     const tabs = document.querySelectorAll('.tabs-container .tab');
     const totalTabs = tabs.length;
@@ -147,7 +146,6 @@ if (window.location.pathname === '/index.html'){
         tab.addEventListener('mouseenter', stopInterval);
         tab.addEventListener('mouseleave', startInterval);
     });
-};
 
     //API e Galeria
 /*--------------------------------*/
