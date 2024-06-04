@@ -258,11 +258,11 @@ button.prev:hover, button.next:hover {
 }
 
 .tabs-container-sobre {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    display: flex;
     gap: 30px;
     margin-top: 35px;
     margin-bottom: 34px;
+    padding: 40px;
 }
 
 .tab-sobre {
